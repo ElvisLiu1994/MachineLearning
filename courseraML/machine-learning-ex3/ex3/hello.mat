@@ -1,0 +1,12 @@
+# Created by Octave 3.8.0, Thu Sep 14 09:14:58 2017 CST <liujing@localhost-2.local>
+# name: c
+# type: matrix
+# rows: 5
+# columns: 2
+ 1 2
+ 2 3
+ 3 4
+ 4 5
+ 5 6
+
+
