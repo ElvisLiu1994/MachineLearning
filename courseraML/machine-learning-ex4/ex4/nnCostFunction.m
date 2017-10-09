@@ -46,7 +46,7 @@ Theta2_grad = zeros(size(Theta2));
 %         that your implementation is correct by running checkNNGradients
 %
 %         Note: The vector y passed into the function is a vector of labels
-%               containing values from 1...K. You need to map this vector into a 
+%               containing values from 1..K. You need to map this vector into a 
 %               binary vector of 1's and 0's to be used with the neural network
 %               cost function.
 %
@@ -61,6 +61,8 @@ Theta2_grad = zeros(size(Theta2));
 %               the regularization separately and then add them to Theta1_grad
 %               and Theta2_grad from Part 2.
 %
+
+
 
 a1 = [ones(1,m); X'];
 
@@ -82,10 +84,8 @@ reg = lambda/(2*m) * (sum(Theta1(:,2:end)(:).^2) + sum(Theta2(:,2:end)(:).^2));
 J += reg;
 
 
-delta3 = a3 - Y;
-delta2 = Theta2'*delta3 .* sigmoid(z2);
 
-D2 = sum( );
+
 
 
 
