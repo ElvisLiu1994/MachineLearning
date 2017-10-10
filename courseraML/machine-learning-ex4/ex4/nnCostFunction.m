@@ -46,7 +46,7 @@ Theta2_grad = zeros(size(Theta2));
 %         that your implementation is correct by running checkNNGradients
 %
 %         Note: The vector y passed into the function is a vector of labels
-%               containing values from 1..K. You need to map this vector into a 
+%               containing values from 1...K. You need to map this vector into a 
 %               binary vector of 1's and 0's to be used with the neural network
 %               cost function.
 %
@@ -76,7 +76,7 @@ h = a3 = sigmoid(z3);
 
 Y = zeros(num_labels, m);
 for i = 1:m 
-	Y(y(i), m) = 1;
+	Y(y(i), i) = 1;
 end;
 
 J = -1.0/m  * sum(sum(Y .* log(h)) + sum((1 - Y) .* log(1 - h)));
@@ -87,10 +87,6 @@ J += reg;
 
 
 a
-
-
-
-
 
 
 
