@@ -81,12 +81,9 @@ end;
 
 J = -1.0/m  * sum(sum(Y .* log(h)) + sum((1 - Y) .* log(1 - h)));
 reg = lambda/(2*m) * (sum(Theta1(:,2:end)(:).^2) + sum(Theta2(:,2:end)(:).^2));
-J += reg;
+J = J + reg;
 
 
-
-
-a
 
 
 
